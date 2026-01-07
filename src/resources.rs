@@ -25,7 +25,6 @@ impl Resources {
 
 fn parse_directory(volumes: &Volumes, directory: &Directory) -> Result<Vec<Vec<u8>>> {
     let mut resources: Vec<Vec<u8>> = vec![];
-    let len = directory.entries.len();
     for entry in &directory.entries {
         let Some(entry) = entry else {
             resources.push(vec![]); // This is a resource whose data doesn't exist, push an empty vec so the array indices still line up.

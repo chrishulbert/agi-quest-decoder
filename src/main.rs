@@ -2,6 +2,9 @@ mod decode;
 mod directories;
 mod volumes;
 mod resources;
+mod view;
+mod palette;
+mod png;
 
 use anyhow::Result;
 
