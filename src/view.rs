@@ -3,7 +3,7 @@
 use anyhow::Result;
 
 use crate::png;
-use crate::palette::{PALETTE, TRANSPARENT};
+use crate::palette::TRANSPARENT;
 
 pub struct View {
     pub loops: Vec<Loop>,
@@ -46,21 +46,6 @@ impl Loop {
             Cel::parse(&data[p..])
         }).collect();
         Ok(Loop { cels })
-    }
-
-    // It's eligible to be an animation if all cels are the same size and there are 2+.
-    pub fn is_animation(&self) -> bool {
-        if self.cels.len() < 2 { return false }
-        for c in &self.cels {
-            if c.width != self.cels[0].width { return false }
-            if c.height != self.cels[0].height { return false }
-        }
-        true
-    }
-
-    pub fn as_apng(&self) -> Vec<u8> {
-        let frames: Vec<Vec<u32>> = self.cels.iter().map(|c| c.as_rgbas()).collect();
-        png::apng_data(self.cels[0].width as u32, self.cels[0].height as u32, &frames)
     }
 }
 
@@ -113,14 +98,6 @@ impl Cel {
             pixels.push(TRANSPARENT);
         }
         Cel { width, height, pixels }
-    }
-
-    pub fn as_png(&self) -> Vec<u8> {
-        png::png_data(self.width as u32, self.height as u32, &self.as_rgbas())
-    }
-
-    fn as_rgbas(&self) -> Vec<u32> {
-        self.pixels.iter().map(|&p| { PALETTE[p as usize] }).collect()
     }
 }
 

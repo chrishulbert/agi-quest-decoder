@@ -5,6 +5,7 @@ mod resources;
 mod view;
 mod palette;
 mod png;
+mod view_renderer;
 
 use anyhow::Result;
 

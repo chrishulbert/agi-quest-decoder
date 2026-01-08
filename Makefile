@@ -13,11 +13,6 @@ clean:
 test:
 	cargo test
 
-embiggen: *.animation.png
-	for f in *.animation.png; do \
-		ffmpeg -i "$$f" -vf "scale=iw*8:ih*4:flags=neighbor" -plays 0 "$$f.big.apng"; \
-	done
-
 compress-animation: *.animation.png
 	for f in *.animation.png; do \
 		apngasm --force -o "$$f" "$$f"; \

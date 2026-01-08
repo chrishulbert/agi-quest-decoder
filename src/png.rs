@@ -98,7 +98,7 @@ fn append_msb_u16(vec: &mut Vec<u8>, value: u16) {
 }
 
 // https://en.wikipedia.org/wiki/Portable_Network_Graphics#File_format
-pub fn png_data(width: u32, height: u32, image_data: &[u32]) -> Vec<u8> {
+pub fn png_data(width: usize, height: usize, image_data: &[u32]) -> Vec<u8> {
     let mut output = Vec::<u8>::new();
 
     // Header.
@@ -117,8 +117,8 @@ pub fn png_data(width: u32, height: u32, image_data: &[u32]) -> Vec<u8> {
     ihdr_type_and_data.push(b'H');
     ihdr_type_and_data.push(b'D');
     ihdr_type_and_data.push(b'R');
-    append_msb(&mut ihdr_type_and_data, width);
-    append_msb(&mut ihdr_type_and_data, height);
+    append_msb(&mut ihdr_type_and_data, width as u32);
+    append_msb(&mut ihdr_type_and_data, height as u32);
     ihdr_type_and_data.push(8); // 8bpp.
     ihdr_type_and_data.push(6); // RGBA.
     ihdr_type_and_data.push(0); // Compression method: zlib.
@@ -171,7 +171,7 @@ pub fn png_data(width: u32, height: u32, image_data: &[u32]) -> Vec<u8> {
 }
 
 // https://en.wikipedia.org/wiki/APNG#File_format
-pub fn apng_data(width: u32, height: u32, frames: &[Vec<u32>]) -> Vec<u8> {
+pub fn apng_data(width: usize, height: usize, frames: &[Vec<u32>]) -> Vec<u8> {
     let mut output = Vec::<u8>::new();
 
     // Header.
@@ -190,8 +190,8 @@ pub fn apng_data(width: u32, height: u32, frames: &[Vec<u32>]) -> Vec<u8> {
     ihdr_type_and_data.push(b'H');
     ihdr_type_and_data.push(b'D');
     ihdr_type_and_data.push(b'R');
-    append_msb(&mut ihdr_type_and_data, width);
-    append_msb(&mut ihdr_type_and_data, height);
+    append_msb(&mut ihdr_type_and_data, width as u32);
+    append_msb(&mut ihdr_type_and_data, height as u32);
     ihdr_type_and_data.push(8); // 8bpp.
     ihdr_type_and_data.push(6); // RGBA.
     ihdr_type_and_data.push(0); // Compression method: zlib.
@@ -230,8 +230,8 @@ pub fn apng_data(width: u32, height: u32, frames: &[Vec<u32>]) -> Vec<u8> {
         fctl_type_and_data.push(b'L');
         let fctl_sequence: u32 = if index == 0 { 0 } else { (index as u32) * 2 - 1 };
         append_msb(&mut fctl_type_and_data, fctl_sequence); // Sequence number starting 0.
-        append_msb(&mut fctl_type_and_data, width);
-        append_msb(&mut fctl_type_and_data, height);
+        append_msb(&mut fctl_type_and_data, width as u32);
+        append_msb(&mut fctl_type_and_data, height as u32);
         append_msb(&mut fctl_type_and_data, 0); // X-offset.
         append_msb(&mut fctl_type_and_data, 0); // Y-offset.
         append_msb_u16(&mut fctl_type_and_data, 10); // Delay numerator.
