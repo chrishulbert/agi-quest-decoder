@@ -5,6 +5,7 @@ use anyhow::{Result, bail};
 use crate::volumes::Volumes;
 use crate::directories::{Directories, Directory};
 
+#[allow(dead_code)]
 pub struct Resources {
     pub logic:    Vec<Vec<u8>>,
     pub pictures: Vec<Vec<u8>>,

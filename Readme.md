@@ -8,7 +8,7 @@ This decodes/reads the graphics and levels for Sierra AGI games such as Space Qu
 
 To run, clone this repo, install Rust, and run: `make run`. It should generate a bunch of png files in the current folder.
 
-![Crawl](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/Crawl.png)
+![Broom](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/Broom.png)
 
 This generates big uncompressed PNGs. To compress them, install `pngquant` and `apngasm` then run `make compress` to make them all a reasonable size.
 

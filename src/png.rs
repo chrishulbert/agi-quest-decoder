@@ -234,7 +234,7 @@ pub fn apng_data(width: usize, height: usize, frames: &[Vec<u32>]) -> Vec<u8> {
         append_msb(&mut fctl_type_and_data, height as u32);
         append_msb(&mut fctl_type_and_data, 0); // X-offset.
         append_msb(&mut fctl_type_and_data, 0); // Y-offset.
-        append_msb_u16(&mut fctl_type_and_data, 10); // Delay numerator.
+        append_msb_u16(&mut fctl_type_and_data, 20); // Delay numerator.
         append_msb_u16(&mut fctl_type_and_data, 0); // Delay denominator. 0 means each value is 100ths of a second.
         fctl_type_and_data.push(1); // Dispose operation. 1 means each frame gets a blank canvas.
         fctl_type_and_data.push(0); // Blend operation. 0 means all components overwrite.

@@ -2,7 +2,6 @@
 
 use anyhow::Result;
 
-use crate::png;
 use crate::palette::TRANSPARENT;
 
 pub struct View {
@@ -26,7 +25,7 @@ impl View {
             let position = (data[offset] as usize) + ((data[offset + 1] as usize) << 8);
             // Read the loop.
             let loop_data = &data[position..];
-            let view_loop = Loop::parse(loop_data)?;
+            let view_loop = Loop::parse(loop_data, i as usize)?;
             loops.push(view_loop);
         }
         Ok(View{ loops })
@@ -37,40 +36,40 @@ pub struct Loop {
     pub cels: Vec<Cel>,
 }
 impl Loop {
-    fn parse(data: &[u8]) -> Result<Loop> {
+    fn parse(data: &[u8], loop_index: usize) -> Result<Loop> {
         let cel_count = data[0] as usize;
         let positions_data_a = &data[1..];
         let positions_data = &positions_data_a[0..(cel_count*2)];
         let positions: Vec<usize> = positions_data.chunks_exact(2).map(parse_2_byte_le).collect();
         let cels: Vec<Cel> = positions.iter().map(|&p| {
-            Cel::parse(&data[p..])
+            Cel::parse(&data[p..], loop_index)
         }).collect();
         Ok(Loop { cels })
     }
 }
 
+#[derive(Clone)]
 pub struct Cel {
     pub width: usize,
     pub height: usize,
     pub pixels: Vec<u8>, // EGA palette indexes.
 }
 impl Cel {
-    fn parse(data: &[u8]) -> Cel {
+    fn parse(data: &[u8], loop_index: usize) -> Cel {
         let width = data[0] as usize;
         let height = data[1] as usize;
         let transparency_mirroring = data[2];
         let mirroring = transparency_mirroring >> 4;
-        let _is_mirrored = mirroring & 0x8 != 0;
-        // if is_mirrored {
-        //     println!("Found mirrored cel!");
-        // }
+        let is_mirrored = mirroring & 0x8 != 0;
+        let mirror_loop_index = (mirroring & 0x7) as usize;
         let transparent = transparency_mirroring & 0xf;
         let image_source_data = &data[3..];
         let mut pixels: Vec<u8> = Vec::with_capacity(width * height);
+        let mut has_decoded_any_pixels_this_line = false;
         'outer: for b in image_source_data {
             if *b == 0 { // End of line.
                 let pixels_filled_in_this_row = pixels.len() % width;
-                if pixels_filled_in_this_row == 0 {
+                if pixels_filled_in_this_row == 0 && has_decoded_any_pixels_this_line {
                     // Do nothing, we've just filled a full row, so nothing left to fill in.
                 } else {
                     // We filled half a row, so fill the rest with transparent.
@@ -82,6 +81,7 @@ impl Cel {
                         }
                     }
                 }
+                has_decoded_any_pixels_this_line = false;
             } else {
                 let raw_colour = b >> 4;
                 let colour = if raw_colour == transparent { TRANSPARENT } else { raw_colour };
@@ -92,13 +92,27 @@ impl Cel {
                         break 'outer;
                     }
                 }
+                has_decoded_any_pixels_this_line = true;
             }
         }
         while pixels.len() < width * height {
             pixels.push(TRANSPARENT);
         }
+        if is_mirrored && mirror_loop_index != loop_index {
+            pixels = mirror(&pixels, width);
+        }
         Cel { width, height, pixels }
     }
+}
+
+fn mirror(pixels: &[u8], width: usize) -> Vec<u8> {
+    let mut out: Vec<u8> = Vec::with_capacity(pixels.len());
+    for chunk in pixels.chunks_exact(width) {
+        for p in chunk.iter().rev() {
+            out.push(*p);
+        }
+    }
+    out
 }
 
 fn parse_2_byte_le(data: &[u8]) -> usize {
