@@ -35,7 +35,7 @@ Or, say, you love Commander Keen, please check out my [Dopefish decoder](https:/
 ![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/Picture1.png)
 ![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/Picture12.png)
 ![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/Picture21.png)
-![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/Picture22LSL.)png
+![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/Picture22LSL.png)
 ![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/Picture27.png)
 ![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/Picture39.png)
 ![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/Picture43.png)
