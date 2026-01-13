@@ -7,6 +7,12 @@ run:
 run-sq2:
 	RUST_BACKTRACE=1 cargo run data/sq2
 
+run-lsl1:
+	RUST_BACKTRACE=1 cargo run data/lsl1
+
+build:
+	cargo build
+
 clean:
 	rm -f Output*
 

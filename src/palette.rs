@@ -17,4 +17,5 @@ pub const PALETTE: [u32; 17] = [
     0xFFFFFFff, // #FFFFFF Bright white.
     0x0, // Transparent.
 ];
+pub const WHITE: u8 = 15;
 pub const TRANSPARENT: u8 = 16;
