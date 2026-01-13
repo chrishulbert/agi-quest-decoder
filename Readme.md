@@ -32,4 +32,15 @@ Or, say, you love Commander Keen, please check out my [Dopefish decoder](https:/
 * https://github.com/lanceewing/agile-gdx/blob/main/core/src/main/java/com/agifans/agile/agilib/View.java
 * https://www.agidev.com/games/?page=3
 
+![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/Picture1.png)
+![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/Picture12.png)
+![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/Picture21.png)
+![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/Picture22LSL.)png
+![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/Picture27.png)
+![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/Picture39.png)
+![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/Picture43.png)
+![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/Picture49.png)
+![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/Picture7.png)
+![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/Picture91.png)
+
 ![Cleaner](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/Cleaner.png)
