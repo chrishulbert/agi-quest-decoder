@@ -8,6 +8,7 @@ mod png;
 mod renderer;
 mod picture;
 mod picture_splitter;
+mod xbrz;
 
 use anyhow::Result;
 
