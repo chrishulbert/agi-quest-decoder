@@ -42,9 +42,9 @@ Or, say, you love Commander Keen, please check out my [Dopefish decoder](https:/
 
 ![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/a.1.png)
 
-![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/a.10.png)
-
 ![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/a.2.png)
+
+![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/a.10.png)
 
 ![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/a.20.png)
 
@@ -61,6 +61,28 @@ Or, say, you love Commander Keen, please check out my [Dopefish decoder](https:/
 ![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/a.70.png)
 
 ![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/b.10.png)
+
+![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/b.20.png)
+
+![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/b.21.png)
+
+![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/b.30.png)
+
+![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/b.40.png)
+
+![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/b.50.png)
+
+![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/b.60.png)
+
+![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/b.70.png)
+
+![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/b.80.png)
+
+![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/b.81.png)
+
+![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/b.82.png)
+
+![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/b.90.png)
 
 ![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/b.100.png)
 
@@ -82,11 +104,7 @@ Or, say, you love Commander Keen, please check out my [Dopefish decoder](https:/
 
 ![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/b.190.png)
 
-![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/b.20.png)
-
 ![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/b.200.png)
-
-![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/b.21.png)
 
 ![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/b.210.png)
 
@@ -100,25 +118,25 @@ Or, say, you love Commander Keen, please check out my [Dopefish decoder](https:/
 
 ![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/b.260.png)
 
-![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/b.30.png)
-
-![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/b.40.png)
-
-![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/b.50.png)
-
-![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/b.60.png)
-
-![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/b.70.png)
-
-![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/b.80.png)
-
-![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/b.81.png)
-
-![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/b.82.png)
-
-![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/b.90.png)
-
 ![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/c.10.png)
+
+![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/c.20.png)
+
+![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/c.30.png)
+
+![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/c.40.png)
+
+![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/c.41.png)
+
+![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/c.50.png)
+
+![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/c.60.png)
+
+![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/c.70.png)
+
+![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/c.80.png)
+
+![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/c.90.png)
 
 ![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/c.100.png)
 
@@ -140,8 +158,6 @@ Or, say, you love Commander Keen, please check out my [Dopefish decoder](https:/
 
 ![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/c.190.png)
 
-![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/c.20.png)
-
 ![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/c.200.png)
 
 ![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/c.210.png)
@@ -151,21 +167,5 @@ Or, say, you love Commander Keen, please check out my [Dopefish decoder](https:/
 ![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/c.230.png)
 
 ![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/c.240.png)
-
-![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/c.30.png)
-
-![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/c.40.png)
-
-![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/c.41.png)
-
-![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/c.50.png)
-
-![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/c.60.png)
-
-![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/c.70.png)
-
-![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/c.80.png)
-
-![Picture](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/sq2/c.90.png)
 
 ![Cleaner](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/Cleaner.png)
