@@ -2,13 +2,13 @@ help:
 	cat Makefile
 
 run:
-	RUST_BACKTRACE=1 cargo run data/sqtlc
+	RUST_BACKTRACE=1 cargo run --release data/sqtlc
 
 run-sq2:
-	RUST_BACKTRACE=1 cargo run data/sq2
+	RUST_BACKTRACE=1 cargo run --release data/sq2
 
 run-lsl1:
-	RUST_BACKTRACE=1 cargo run data/lsl1
+	RUST_BACKTRACE=1 cargo run --release data/lsl1
 
 build:
 	cargo build

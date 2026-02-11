@@ -12,7 +12,7 @@ To run against Space Quest 2 or Leisure Suit Larry 1, put them in `data/SQ2` and
 
 ![Broom](https://github.com/chrishulbert/agi-quest-decoder/raw/main/readme/Broom.png)
 
-Images are upscaled to suit the original aspect ratio of the game, using XBRZ to give a smoother-but-still-pixely effect. If you prefer nearest-neighbour, uncomment it at the bottom of `renderer.rs`.
+Images are upscaled to suit the original aspect ratio of the game, using ScaleFX to give a smoother-but-still-pixely effect. If you prefer nearest-neighbour, uncomment it at the bottom of `renderer.rs`.
 
 This generates big uncompressed PNGs. To compress them, install `pngquant` and `apngasm` then run `make compress` to make them all a reasonable size.
 
