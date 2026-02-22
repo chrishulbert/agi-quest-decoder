@@ -4,6 +4,9 @@ help:
 run:
 	RUST_BACKTRACE=1 cargo run --release data/sqtlc
 
+run-sq1:
+	RUST_BACKTRACE=1 cargo run --release data/sq1
+	
 run-sq2:
 	RUST_BACKTRACE=1 cargo run --release data/sq2
 

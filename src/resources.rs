@@ -31,6 +31,10 @@ fn parse_directory(volumes: &Volumes, directory: &Directory) -> Result<Vec<Vec<u
             resources.push(vec![]); // This is a resource whose data doesn't exist, push an empty vec so the array indices still line up.
             continue;
         };
+        if entry.volume >= volumes.volumes.len() {
+            resources.push(vec![]);
+            continue;
+        }
         let volume = &volumes.volumes[entry.volume];
         // Half of the directories have a final entry where the position is out of range, so we need to skip those.
         if entry.position >= volume.len() {
